@@ -22,26 +22,11 @@ const time = document.getElementById('time'),
   function setBgGreet() {
     let today = new Date(),
     hour = today.getHours();
-     
-    //switch(hour){
-    //  case  hour > 6 && hour < 12 : 
-    //    document.body.style.backgroundImage ="url('https://images.wallpaperscraft.ru/image///voshod_tuman_derevia_133599_1280x720.jpg')";
-    //    greeting.textContent = 'Доброе утро!';
-    //    break;
-    //  case hour > 12 && hour < 18 : 
-    //    document.body.style.backgroundImage ="url('https://images.wallpaperscraft.ru/image///holmy_zelenyy_leto_svet_solnce_polden_teni_nebo_yasno_spokoystvie_63419_1280x720.//jpg')";
-    //    greeting.textContent = 'Добрый день!'; 
-    //    break;
-    //  case //hour < 6 && hour > 18 :
-    //    document.body.style.backgroundImage ="url('https://images.wallpaperscraft.ru/image///noch_les_gory_144768_1280x720.jpg')";
-    //    greeting.textContent = 'Добрый вечер!'; 
-    //    document.body.style.color = 'white';  
-    //};
-    if ( hour > 6 && hour < 12) {
+    if ( hour >= 6 && hour < 12) {
       document.body.style.backgroundImage ="url('https://images.wallpaperscraft.ru/image///voshod_tuman_derevia_133599_1280x720.jpg')";
       greeting.textContent = 'Доброе утро!';
-    } else if (hour > 12 && hour < 18) {
-      document.body.style.backgroundImage ="url('https://images.wallpaperscraft.ru/image///holmy_zelenyy_leto_svet_solnce_polden_teni_nebo_yasno_spokoystvie_63419_1280x720.jpg')//";
+    } else if (hour >= 12 && hour < 18) {
+      document.body.style.backgroundImage ="url('https://images.wallpaperscraft.ru/image///holmy_zelenyy_leto_svet_solnce_polden_teni_nebo_yasno_spokoystvie_63419_1280x720.jpg') ";
       greeting.textContent = 'Добрый день!';
     } else {
       document.body.style.backgroundImage ="url('https://images.wallpaperscraft.ru/image/noch_les_gory_144768_1280x720.jpg')";
